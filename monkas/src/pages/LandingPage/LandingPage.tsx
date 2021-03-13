@@ -1,7 +1,12 @@
 import * as React from "react";
+import Slideshow from "../../component/Slideshow";
 
 const LandingPage: React.FC = () => {
-  return <>pop</>;
+  return (
+    <>
+      <Slideshow />
+    </>
+  );
 };
 
 export default LandingPage;
