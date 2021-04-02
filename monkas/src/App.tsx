@@ -4,14 +4,17 @@ import "./App.scss";
 import NavBar from "./component/NavBar";
 import SideBar from "./component/SideBar";
 import LandingPage from "./pages/LandingPage";
+import { useDispatch, useSelector, RootStateOrAny } from "react-redux";
 
 const App: React.FC = () => {
+  const { count } = useSelector((state: RootStateOrAny) => state.counter);
+  const dispatch = useDispatch();
   return (
     <>
       <NavBar />
       <Router>
         <Switch>
-          <Route  exact path="/">
+          <Route exact path="/">
             <LandingPage />
           </Route>
         </Switch>

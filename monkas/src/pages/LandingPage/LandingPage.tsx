@@ -4,7 +4,7 @@ import Slideshow from "../../component/Slideshow";
 const LandingPage: React.FC = () => {
   return (
     <>
-      <Slideshow tab1='Vegetable' tab2='Fruits' tab3='Others'/>
+      <Slideshow tab1="Vegetable" tab2="Fruits" tab3="Others" />
     </>
   );
 };
