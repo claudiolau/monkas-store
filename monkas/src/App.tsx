@@ -5,21 +5,14 @@ import NavBar from "./component/NavBar";
 import SideBar from "./component/SideBar";
 import LandingPage from "./pages/LandingPage";
 
-function About() {
-  return <h2>About</h2>;
-}
-
 const App: React.FC = () => {
   return (
     <>
       <NavBar />
       <Router>
         <Switch>
-          <Route path="/home">
+          <Route  exact path="/">
             <LandingPage />
-          </Route>
-          <Route path="/about">
-            <About />
           </Route>
         </Switch>
       </Router>
