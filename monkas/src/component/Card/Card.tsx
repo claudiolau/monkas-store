@@ -55,7 +55,6 @@ const Card: React.FC<urlProp> = ({
           <Box as="span" color="gray.600" fontSize="sm">
             / QTY
           </Box>
-
           <Button m={2} onClick={() => dispatch(increment())}>
             Buy
           </Button>
