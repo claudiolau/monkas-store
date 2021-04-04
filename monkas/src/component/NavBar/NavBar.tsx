@@ -3,11 +3,10 @@ import { Box, Center, Spacer, Square } from "@chakra-ui/layout";
 import { GiAbstract086 } from "react-icons/gi";
 import { Button, Flex, Text } from "@chakra-ui/react";
 import { MdAddShoppingCart } from "react-icons/md";
-import { useDispatch, useSelector, RootStateOrAny } from "react-redux";
+import { useSelector, RootStateOrAny } from "react-redux";
 
 const NavBar: React.FC = () => {
   const { count } = useSelector((state: RootStateOrAny) => state.counter);
-  const dispatch = useDispatch();
   return (
     <>
       <Flex rounded="2x1" boxShadow="sm" marginBottom="12px">

@@ -2,7 +2,7 @@ import * as React from "react";
 import { StarIcon } from "@chakra-ui/icons";
 import { Box, Badge, Image, Button } from "@chakra-ui/react";
 import { increment, decrement, incrementByAmount, decrementByAmount } from "../../redux/counter";
-import { useDispatch, useSelector, RootStateOrAny } from "react-redux";
+import { useDispatch} from "react-redux";
 
 type urlProp = {
   name: string;
@@ -29,7 +29,7 @@ const Card: React.FC<urlProp> = ({
     reviewCount: counts,
     rating: rates,
   };
-  const { count } = useSelector((state: RootStateOrAny) => state.counter);
+  
   const dispatch = useDispatch();
 
   return (
