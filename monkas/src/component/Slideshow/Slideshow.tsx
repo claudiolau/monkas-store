@@ -5,11 +5,9 @@ import {
   TabPanels,
   Tab,
   TabPanel,
-  Button,
 } from "@chakra-ui/react";
 import Card from "../Card";
-import { useSelector, RootStateOrAny, useDispatch } from "react-redux";
-import { increment, decrement, incrementByAmount } from "../../redux/counter";
+
 
 type TabProps = {
   tab1: string;
@@ -18,8 +16,6 @@ type TabProps = {
 };
 
 const Slideshow: React.FC<TabProps> = ({ tab1, tab2, tab3 }) => {
-  const { count } = useSelector((state: RootStateOrAny) => state.counter);
-  const dispatch = useDispatch();
   const sWidth: string = "25";
   const sLength: string = "25";
   return (
